@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="attendance" prefHeight="400.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AttendanceList">
+   <children>
+      <TableView fx:id="table" layoutX="24.0" layoutY="53.0" prefHeight="293.0" prefWidth="702.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="40.0" text="Id" />
+          <TableColumn fx:id="firstname" editable="true" minWidth="50.0" prefWidth="100.0" text="Firstname" />
+            <TableColumn fx:id="lastname" editable="true" prefWidth="100.0" text="Lastname" />
+            <TableColumn fx:id="gender" prefWidth="60.0" text="Gender" />
+            <TableColumn fx:id="email" editable="true" prefWidth="200.0" text="Email" />
+            <TableColumn fx:id="phone_number" editable="true" prefWidth="200.0" text="Phone Number" />
+        </columns>
+      </TableView>
+       <Button fx:id="addAttend" layoutX="150.0" layoutY="353.0" mnemonicParsing="false" onAction="#addAttendance" text="Add Attendance" textAlignment="CENTER">
+           <font>
+               <Font size="18.0" />
+           </font>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </padding>
+       </Button>
+       <Button layoutX="329.0" layoutY="353.0" mnemonicParsing="false" onAction="#editAttendanceList" text="Update Attendance" textAlignment="CENTER">
+           <font>
+               <Font size="18.0" />
+           </font>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </padding>
+       </Button>
+       <Button layoutX="537.0" layoutY="353.0" mnemonicParsing="false" onAction="#deleteAttendance" text="Delete Attandance" textAlignment="CENTER">
+           <font>
+               <Font size="18.0" />
+           </font>
+           <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </padding>
+       </Button>
+      <Label fx:id="status" alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="21.0" prefWidth="702.0" textAlignment="CENTER" textFill="#dd1313">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
