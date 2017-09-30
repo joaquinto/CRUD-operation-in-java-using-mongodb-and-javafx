@@ -23,6 +23,10 @@ public class Attendees {
         this.gender = new SimpleStringProperty(gender);
         this.phone_number = new SimpleStringProperty(phone_number);
     }
+    
+    public Integer getId() {
+        return id.get();
+    }
 
     public String getFirstname() {
         return firstname.get();
