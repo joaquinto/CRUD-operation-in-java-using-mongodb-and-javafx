@@ -266,8 +266,4 @@ public class AttendanceList implements Initializable{
             cursor.close();
         }
     }
-
-    public void createConnection(String host, int port){
-
-    }
 }
